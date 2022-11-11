@@ -8,18 +8,34 @@
 
 Before you download ARCHE (13Gb), make sure the following requirements are working properly on your computer:
 
-p7zip
-bedtools >= 2.27.0
-barrnap
-Prodigal
-GeneMarkS-2
-blastp
-DIAMOND
-FASTA36
-hmmer
-faSomeRecords
-Infernal 1.1.4 ---> Install manualy
-tRNAscan-SE ---> Install manualy
+p7zip  
+bedtools >= 2.27.0  
+barrnap  
+Prodigal  
+GeneMarkS-2  
+hmmer  
+blastp  
+DIAMOND 
+
+FASTA36 ---> https://github.com/wrpearson/fasta36.git  
+
+faSomeRecords ---> The version which works with ARCHE can be found here http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/  
+
+Infernal 1.1.4 ---> Install manually!  
+&nbsp;    **tar xvfz infernal-1.1.4.tar.gz**  
+&nbsp;    **cd infernal-1.1.4/**  
+&nbsp;    **./configure**  
+&nbsp;    **make**  
+&nbsp;    **sudo make install**  
+&nbsp;    **sudo mv infernal-1.1.4 /opt/**  
+
+tRNAscan-SE ---> Install manually!  
+&nbsp;    **Download it from http://lowelab.ucsc.edu/tRNAscan-SE/**  
+&nbsp;    **tar xvfz trnascan-se-2.0.9.tar.gz**  
+&nbsp;    **cd tRNAscan-SE-2.0**  
+&nbsp;    **make**  
+&nbsp;    **sudo make install**  
+&nbsp;    **sudo mv tRNAscan-SE-2.0/ /opt/**  
 
 
 
