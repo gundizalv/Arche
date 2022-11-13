@@ -56,7 +56,7 @@ arche.sh -n ecoli -t 20 -r 40 e_coli.fna
 arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 ```
 
-### DIAMOND annotation of metagenome
+### DIAMOND annotation of a metagenome
 ```
 arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
