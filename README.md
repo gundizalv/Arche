@@ -26,7 +26,6 @@ Infernal 1.1.4 ---> Install manually!
 &nbsp;    **./configure**  
 &nbsp;    **make**  
 &nbsp;    **sudo make install**  
-&nbsp;    **sudo mv infernal-1.1.4 /opt/**  
 
 tRNAscan-SE ---> Install manually!  
 &nbsp;    **Download it from http://lowelab.ucsc.edu/tRNAscan-SE/**  
@@ -34,15 +33,12 @@ tRNAscan-SE ---> Install manually!
 &nbsp;    **cd tRNAscan-SE-2.0**  
 &nbsp;    **make**  
 &nbsp;    **sudo make install**  
-&nbsp;    **sudo mv tRNAscan-SE-2.0/ /opt/**  
 
 GeneMarkS-2  
 &nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
 &nbsp;    **gunzip gm_key_64.gz**  
 &nbsp;    **tar xvfz gms2_linux_64.tar.gz**  
 &nbsp;    **cp gm_key_64 ~/.gmhmmp2_key**  
-&nbsp;    **sudo mv gms2_linux_64 /opt/**  
-&nbsp;    **cp -s /opt/gms2_linux_64/{biogem,compp,gmhmmp2,gms2.pl} /usr/bin/**  
 
 ## Running ARCHE
 
