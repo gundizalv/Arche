@@ -123,3 +123,4 @@ arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ## Author
 
 * Daniel Alonso
+* email: gundizalvus16@hotmail.com
