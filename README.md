@@ -2,11 +2,11 @@
 [![DOI:10.1093/bioinformatics/btu153](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btu153.svg)](https://doi.org/10.1093/bioinformatics/btu153)
 ![Don't judge me](https://img.shields.io/badge/Language-Bash-blue)
 
-# ARCHE: a functional-optimized annotator for microbial meta(genomes)
+# Arche: a functional-optimized annotator for microbial meta(genomes)
 
 ## Installing dependencies
 
-Before you download ARCHE (13Gb), make sure the following software are working properly on your computer:
+Before you download Arche (13Gb), make sure the following software are working properly on your computer:
 
 p7zip  
 bedtools >= 2.27.0  
@@ -18,7 +18,7 @@ DIAMOND
 
 FASTA36 ---> https://github.com/wrpearson/fasta36.git  
 
-faSomeRecords ---> The version which works with ARCHE can be found here http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/  
+faSomeRecords ---> The version which works with Arche can be found here http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/  
 
 Infernal 1.1.4 ---> Install manually!  
 &nbsp;    **tar xvfz infernal-1.1.4.tar.gz**  
@@ -40,7 +40,30 @@ GeneMarkS-2
 &nbsp;    **tar xvfz gms2_linux_64.tar.gz**  
 &nbsp;    **cp gm_key_64 ~/.gmhmmp2_key**  
 
-## Running ARCHE
+## Installing Arche  
+
+The program with the already formatted databases and mapping files can be downloaded via GUI from Google Drive:  
+
+https://drive.google.com/file/d/1bymlk6RpIl2m8EXwE3AGNrPvV8bSfrrq/view?usp=share_link  
+
+... or via command line using gdown:  
+
+&nbsp;    **pip3 install gdown**  
+&nbsp;    **gdown https://drive.google.com/uc?id=1bymlk6RpIl2m8EXwE3AGNrPvV8bSfrrq**  
+
+Once the download is finished:  
+
+&nbsp;    **tar -xvf arche_1.0.1.tar (move the output directory to the desired place)**  
+&nbsp;    **cd arche_1.0.1/bin/**  
+&nbsp;    **chmod +777 arche.sh**  
+&nbsp;    **./arche.sh --install**  
+
+You should make the script "arche.sh" accessible to your PATH, for example via symbolic link:  
+
+&nbsp;    **cd /usr/bin**  
+&nbsp;    **sudo cp -s /home/???/???/arche_1.0.1/bin/arche.sh ./**  
+
+## Running Arche
 
 ### BlastP annotation of a bacterial genome, using 20 threads and 40 GB of memory:
 ```
@@ -57,7 +80,6 @@ arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
 
-
 ## Output Files
 
 | File(s) | Description |
@@ -65,14 +87,14 @@ arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 | rRNA.tsv | GFF v3 file containing rRNA annotations. |
 | rRNA.fna | FASTA file of all rRNA features. |
 | tRNA.tsv | Table with tRNA details (coordinates, isotype, anticodon, scores, etc). |
-| []_struc_annot.fna | FASTA file of all genomic features (nucleotide). |
-| []_struc_annot.faa | FASTA file of translated coding genes (aminoacid). |
-| heuristic[]_out | Output matches of the search instance(s) performed with BLASTp, DIAMOND or SSEARCH36. |
-| heuristic[]_non_match.faa | FASTA file with the remaining non-matched sequences after the search instance(s) performed with BLASTp, DIAMOND or SSEARCH36. |
-| hmmscan_[]_out | HMMER3 output table of the search instance(s) performed against a specific HMMDB. |
+| [...]_struc_annot.fna | FASTA file of all genomic features (nucleotide). |
+| [...]_struc_annot.faa | FASTA file of translated coding genes (aminoacid). |
+| heuristic[...]_out | Output matches of the search instance(s) performed with BLASTp, DIAMOND or SSEARCH36. |
+| heuristic[...]_non_match.faa | FASTA file with the remaining non-matched sequences after the search instance(s) performed with BLASTp, DIAMOND or SSEARCH36. |
+| hmmscan_[...]_out | HMMER3 output table of the search instance(s) performed against a specific HMMDB. |
 | [HMMDB]_non_match.faa | FASTA file with the remaining non-matched sequences after the search instance performed against a specific HMMDB. |
-| []_omic_table.tbl | Feature table with fields separated by vertical bars. |
-| []_omic_table.tsv | Feature table with tab-separated fields. |
+| [...]_omic_table.tbl | Feature table with fields separated by vertical bars. |
+| [...]_omic_table.tsv | Feature table with tab-separated fields. |
 
 ## Command line options
 
