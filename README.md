@@ -1,5 +1,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Don't judge me](https://img.shields.io/badge/Language-Bash-blue)
+[![DOI:10.1101/2022.11.28.518280/bioRxiv](https://zenodo.org/badge/DOI/10.1101/2022.11.28.518280/bioRxiv.svg)](https://doi.org/10.1101/2022.11.28.518280)
 
 # Arche: a functional-optimized annotator for microbial meta(genomes)
 
