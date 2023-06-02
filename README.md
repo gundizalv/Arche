@@ -44,7 +44,7 @@ GeneMarkS-2
 
 The program with the already formatted databases and mapping files can be downloaded via GUI from Google Drive:  
 
-https://drive.google.com/file/d/1bymlk6RpIl2m8EXwE3AGNrPvV8bSfrrq/view?usp=share_link  
+https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing
 
 ... or via command line using gdown:  
 
@@ -79,6 +79,8 @@ arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 ```
 arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
+
+
 
 ## Output Files
 
