@@ -79,8 +79,11 @@ arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 ```
 arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
+## Annotation of Exiguobacterium Sibiricum 255-15
 
+Here you can download a sample which includes the annotation of Exiguobacterium Sibiricum 255-15 with both NCBI PGAP and Arche:
 
+https://docs.google.com/spreadsheets/d/17Nd_y7w2axfxsjFJYAvb_NI3AW9HjNx4/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true
 
 ## Output Files
 
