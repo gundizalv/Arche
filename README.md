@@ -97,6 +97,7 @@ arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 | [HMMDB]_non_match.faa | FASTA file with the remaining non-matched sequences after the search instance performed against a specific HMMDB. |
 | [...]_omic_table.tbl | Feature table with fields separated by vertical bars. |
 | [...]_omic_table.tsv | Feature table with tab-separated fields. |
+| arche_report | File which includes the parameters of the run and results. |
 
 ## Command line options
 
@@ -133,7 +134,7 @@ arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
     
 	-b, --bypass         Use 'yes' to bypass the RNA gene prediction.
     
-	-v, --verbose	     Verbose mode (default 'off')
+	-v, --verbose	     Use 'yes' to turn on the verbose mode.
 
 
 # Licence
