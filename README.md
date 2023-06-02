@@ -49,7 +49,7 @@ https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=shari
 ... or via command line using gdown:  
 
 &nbsp;    **pip3 install gdown**  
-&nbsp;    **gdown https://drive.google.com/uc?id=1bymlk6RpIl2m8EXwE3AGNrPvV8bSfrrq**  
+&nbsp;    **gdown https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing**  
 
 Once the download is finished:  
 
