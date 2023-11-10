@@ -44,7 +44,7 @@ GeneMarkS-2
 
 The program with the already formatted databases and mapping files can be downloaded via GUI from Google Drive:  
 
-https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing
+[https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing](https://drive.google.com/file/d/1x9caXGPpYXCHUoodOdnuJI0tCDe9qtGG/view?usp=sharing)
 
 ... or via command line using gdown:  
 
@@ -79,11 +79,11 @@ arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 ```
 arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
-## Annotation of Exiguobacterium Sibiricum 255-15
+## Annotation of Escherichia coli K12
 
-Here you can download a sample which includes the annotation of Exiguobacterium Sibiricum 255-15 with both NCBI PGAP and Arche:
+Here you can download a sample which includes the annotation of Escherichia coli K12 with several tools including Arche:
 
-https://docs.google.com/spreadsheets/d/17Nd_y7w2axfxsjFJYAvb_NI3AW9HjNx4/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true
+[https://docs.google.com/spreadsheets/d/17Nd_y7w2axfxsjFJYAvb_NI3AW9HjNx4/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1ISnksbKhaqlUVYyr8r4OAOWdpsfri2F9/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true)
 
 ## Output Files
 
