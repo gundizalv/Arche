@@ -49,7 +49,7 @@ The program with the already formatted databases and mapping files can be downlo
 ... or via command line using gdown:  
 
 &nbsp;    **pip3 install gdown**  
-&nbsp;    **gdown https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing**  
+&nbsp;    **gdown --fuzzy https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing**  
 
 Once the download is finished:  
 
