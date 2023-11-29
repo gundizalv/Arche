@@ -8,7 +8,7 @@
 
 Before you download Arche (13Gb), make sure the following software are working properly on your computer:
 
-p7zip  
+p7zip-full  
 bedtools >= 2.27.0  
 barrnap  
 Prodigal  
