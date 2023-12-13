@@ -63,6 +63,8 @@ You should make the script "arche.sh" accessible to your PATH, for example via s
 &nbsp;    **cd /usr/bin**  
 &nbsp;    **sudo cp -s /home/???/???/arche_1.0.1/bin/arche.sh ./**  
 
+**ATTENTION! If something fails, you should check that all the requirements are working, and repeat the installation process from the begining (arche_X.X.X.tar file)**.
+
 ## Running Arche
 
 ### BlastP annotation of a bacterial genome, using 20 threads and 40 GB of memory:
