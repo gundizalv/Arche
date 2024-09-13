@@ -8,28 +8,33 @@
 
 Before you download Arche (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
 
-GeneMarkS-2  
-&nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi** 
-&nbsp;    **tar xvfz gms2_linux_[version].tar.gz** 
+&nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
+&nbsp;    **tar xvfz gms2_linux_[version].tar.gz**  
+
 Move the dir to the desired place, and make the binary files accesible to your PATH (e.g. add **export PATH=$PATH:</path/to/gms2_linux_[version]>** to your ~/.bashrc file)
+
 Configure the key you've downloaded
+
 &nbsp;    **gunzip gm_key.gz**  
-&nbsp;    **cp gm_key ~/.gmhmmp2_key**
+&nbsp;    **cp gm_key ~/.gmhmmp2_key**  
 or
-&nbsp;    **cp gm_key ~/.gm_key**
-Test the software with a genome you would like to analyse
-&nbsp;    **gms2.pl --seq YOUR_GENOME**
+&nbsp;    **cp gm_key ~/.gm_key**  
+
+Test the software
+
+&nbsp;    **gms2.pl --seq YOUR_GENOME**  
 
 To install the other dependencies, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
 
-&nbsp;    **conda create -n arche_annotator diamond=2.0.14 bedtools=2.27.0 p7zip=16.02 barrnap=0.9 hmmer=3.3.2 prodigal=2.6.3 blast=2.12.0 fasta3=36.3.8i ucsc-fasomerecords=455 trnascan-se=2.0.9 gdown -c bioconda -c conda-forge**
+&nbsp;    **conda create -n arche_annotator diamond=2.0.14 bedtools=2.27.0 p7zip=16.02 barrnap=0.9 hmmer=3.3.2 prodigal=2.6.3 blast=2.12.0 fasta3=36.3.8i ucsc-fasomerecords=455 trnascan-se=2.0.9 gdown -c bioconda -c conda-forge**  
 
+This command wil create a conda environment for arche future runs. It includes the installation of specific packages from bioconda and conda-forge channels.
 
 ## Installing Arche  
 
-The program with the already formatted databases and mapping files can be downloaded via command line using gdown:  
+The program with the already formatted databases and mapping files can be downloaded (13Gb) via command line using gdown:  
 
-&nbsp;    **conda activate arche_annotator**
+&nbsp;    **conda activate arche_annotator**  
 &nbsp;    **gdown --fuzzy https://drive.google.com/file/d/1x9caXGPpYXCHUoodOdnuJI0tCDe9qtGG/view?usp=sharing**  
 
 Once the download is finished:  
@@ -39,7 +44,7 @@ Once the download is finished:
 &nbsp;    **chmod +777 arche.sh**  
 &nbsp;    **./arche.sh --install**  
 
-You should make the bin directory accessible to your PATH
+You should make the bin directory accessible to your PATH (e.g. add export PATH=$PATH:</path/to/arche_[version]/bin> to your ~/.bashrc file)
 
 ## Troubleshooting
 
