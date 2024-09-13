@@ -2,68 +2,53 @@
 ![Don't judge me](https://img.shields.io/badge/Language-Bash-blue)
 [![DOI:10.1101/2022.11.28.518280/bioRxiv](https://zenodo.org/badge/DOI/10.1101/2022.11.28.518280/bioRxiv.svg)](https://doi.org/10.1101/2022.11.28.518280)
 
-# Arche: a functional-optimized annotator for microbial meta(genomes)
+# Arche: a flexible tool for annotation of microbial contigs
 
 ## Installing dependencies
 
-Before you download Arche (13Gb), make sure the following software are working properly on your computer:
-
-p7zip-full  
-bedtools >= 2.27.0  
-barrnap  
-Prodigal  
-hmmer  
-blastp  
-DIAMOND 
-
-FASTA36 ---> https://github.com/wrpearson/fasta36.git  
-
-faSomeRecords ---> The version which works with Arche can be found here http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/  
-
-Infernal 1.1.4 ---> Install manually!  
-&nbsp;    **tar xvfz infernal-1.1.4.tar.gz**  
-&nbsp;    **cd infernal-1.1.4/**  
-&nbsp;    **./configure**  
-&nbsp;    **make**  
-&nbsp;    **sudo make install**  
-
-tRNAscan-SE ---> Install manually!  
-&nbsp;    **Download it from http://lowelab.ucsc.edu/tRNAscan-SE/**  
-&nbsp;    **tar xvfz trnascan-se-2.0.9.tar.gz**  
-&nbsp;    **cd tRNAscan-SE-2.0**  
-&nbsp;    **make**  
-&nbsp;    **sudo make install**  
+Before you download Arche (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
 
 GeneMarkS-2  
-&nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
-&nbsp;    **gunzip gm_key_64.gz**  
-&nbsp;    **tar xvfz gms2_linux_64.tar.gz**  
-&nbsp;    **cp gm_key_64 ~/.gmhmmp2_key**  
+&nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi** 
+&nbsp;    **tar xvfz gms2_linux_[version].tar.gz** 
+Move the dir to the desired place, and make the binary files accesible to your PATH (e.g. add **export PATH=$PATH:</path/to/gms2_linux_[version]>** to your ~/.bashrc file)
+Configure the key you've downloaded
+&nbsp;    **gunzip gm_key.gz**  
+&nbsp;    **cp gm_key ~/.gmhmmp2_key**
+or
+&nbsp;    **cp gm_key ~/.gm_key**
+Test the software with a genome you would like to analyse
+&nbsp;    **gms2.pl --seq YOUR_GENOME**
+
+To install the other dependencies, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
+
+&nbsp;    **conda create -n arche_annotator diamond=2.0.14 bedtools=2.27.0 p7zip=16.02 barrnap=0.9 hmmer=3.3.2 prodigal=2.6.3 blast=2.12.0 fasta3=36.3.8i ucsc-fasomerecords=455 trnascan-se=2.0.9 gdown -c bioconda -c conda-forge**
+
 
 ## Installing Arche  
 
-The program with the already formatted databases and mapping files can be downloaded via GUI from Google Drive:  
+The program with the already formatted databases and mapping files can be downloaded via command line using gdown:  
 
-[https://drive.google.com/file/d/1galIzwiuxXc3rNKyhoTysnl7DMdh3p4Z/view?usp=sharing](https://drive.google.com/file/d/1x9caXGPpYXCHUoodOdnuJI0tCDe9qtGG/view?usp=sharing)
-
-... or via command line using gdown:  
-
-&nbsp;    **pip3 install gdown**  
+&nbsp;    **conda activate arche_annotator**
 &nbsp;    **gdown --fuzzy https://drive.google.com/file/d/1x9caXGPpYXCHUoodOdnuJI0tCDe9qtGG/view?usp=sharing**  
 
 Once the download is finished:  
 
-&nbsp;    **tar -xvf arche_1.0.1.tar (move the output directory to the desired place)**  
-&nbsp;    **cd arche_1.0.1/bin/**  
+&nbsp;    **tar -xvf arche_[version].tar (move the output directory to the desired place)**  
+&nbsp;    **cd arche_[version]/bin/**  
 &nbsp;    **chmod +777 arche.sh**  
 &nbsp;    **./arche.sh --install**  
 
-You should make the script "arche.sh" accessible to your PATH, for example via symbolic link:  
+You should make the bin directory accessible to your PATH
 
-&nbsp;    **cd /usr/bin**  
-&nbsp;    **sudo cp -s /home/???/???/arche_1.0.1/bin/arche.sh ./**  
+## Troubleshooting
 
-**ATTENTION! If something fails, you should check that all the dependencies are working, and repeat the installation process from the begining (arche_X.X.X.tar file)**.
+In the case the instalation process or the running fails:
+
+1. Check you are working within the conda environment you've created ("conda activate arche_annotator")
+2. Check you have properly installed GeneMarkS-2
+3. If you have already run the command **./arche.sh --install**, open the arche.sh script using a text editor and in the section "Main directory" (first lines) replace the string after DIR= with the full path of the working directory, e.g. /home/YOUR_USER/arche_1.0.1
+4. Delete arche's directory, uncompress from tar file, and install again
 
 ## Running Arche
 
