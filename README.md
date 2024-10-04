@@ -77,6 +77,17 @@ Here you can download a sample which includes the annotation of Escherichia coli
 
 [https://docs.google.com/spreadsheets/d/17Nd_y7w2axfxsjFJYAvb_NI3AW9HjNx4/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1ISnksbKhaqlUVYyr8r4OAOWdpsfri2F9/edit?usp=sharing&ouid=115908476093915484477&rtpof=true&sd=true)
 
+## Opening the Output Table
+
+The final table with all the annotations comes in two flavours:
+
+[...]_omic_table.tbl which can be examined through the linux console with the comand 
+
+&nbsp;    **column -ts "|" [example]_omic_table.tbl | less -S**  
+
+ [...]_omic_table.tsv which can be opened using spreadsheet editors like Microsoft Excel, LibreOffice Calc, etc.
+
+
 ## Output Files
 
 | File(s) | Description |
