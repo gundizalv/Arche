@@ -46,7 +46,7 @@ Once the download is finished:
 &nbsp;    **chmod +777 arche.sh**  
 &nbsp;    **./arche.sh --install**  
 
-You should make the bin directory accessible to your PATH (e.g. add export PATH=$PATH:</path/to/arche_[version]/bin> to your ~/.bashrc file)
+You should make the bin directory accessible to your PATH (e.g. add export PATH=$PATH:/path/to/arche_[version]/bin to your ~/.bashrc file)
 
 ## Troubleshooting
 
