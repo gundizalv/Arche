@@ -44,7 +44,7 @@ Once the download is finished:
 &nbsp;    **tar -xvf arche_[version].tar (move the output directory to the desired place)**  
 &nbsp;    **cd arche_[version]/bin/**  
 &nbsp;    **chmod +777 arche.sh**  
-&nbsp;    **./arche.sh --install**  
+&nbsp;    **bash arche.sh --install**  
 
 You should make the bin directory accessible to your PATH (e.g. add export PATH=$PATH:/path/to/arche_[version]/bin to your ~/.bashrc file)
 
