@@ -17,14 +17,20 @@ Move the dir to the desired place, and make the binary files accesible to your P
 
 Configure the key you've downloaded
 
-&nbsp;    **gunzip gm_key.gz**  
-&nbsp;    **cp gm_key ~/.gmhmmp2_key**  
+```
+gunzip gm_key.gz
+cp gm_key ~/.gmhmmp2_key
+``` 
 or
-&nbsp;    **cp gm_key ~/.gm_key**  
+```
+cp gm_key ~/.gm_key
+``` 
 
 Test the software
 
-&nbsp;    **gms2.pl --seq YOUR_GENOME**  
+```
+gms2.pl --seq YOUR_GENOME
+```
 
 To install Arche, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
 
