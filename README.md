@@ -37,8 +37,14 @@ This command wil create a conda environment for arche future runs. It includes t
 
 The already formatted databases and mapping files can be downloaded (13Gb) via command line:  
 
-&nbsp;    **arche --download**
-&nbsp;    **arche --install**  
+```
+arche --download
+```
+Once you have the decompressed database directory (e.g. arche_0.0.0) do
+```
+arche --install
+```
+
 
 ## Troubleshooting
 
