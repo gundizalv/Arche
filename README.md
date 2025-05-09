@@ -13,7 +13,7 @@ Before you download Arche and its databases (13Gb), make sure GeneMarkS-2 (GMS2)
 &nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
 &nbsp;    **tar xvfz gms2_linux_[version].tar.gz**  
 
-Move the dir to the desired place, and make the binary files accesible to your PATH (e.g. add **export PATH=$PATH:/path/to/gms2_linux_[version]** to your ~/.bashrc file)
+Move the dir to the desired place, and make the binary files accesible to your PATH.
 
 Configure the key you've downloaded
 
