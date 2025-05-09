@@ -11,8 +11,10 @@ The growing amount of genomic data has prompted a need for less demanding and us
 Before you download Arche and its databases (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
 
 &nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
-&nbsp;    **tar xvfz gms2_linux_[version].tar.gz**  
 
+```
+tar xvfz gms2_linux_[version].tar.gz
+```
 Move the dir to the desired place, and make the binary files accesible to your PATH.
 
 Configure the key you've downloaded
