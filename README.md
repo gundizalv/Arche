@@ -6,7 +6,7 @@
 
 The growing amount of genomic data has prompted a need for less demanding and user friendly functional annotators. At the present, it’s hard to find a pipeline for the annotation of multiple functional data, such as both enzyme commission numbers (E.C.) and orthologous identifiers (KEGG and eggNOG), protein names, gene names, alternative names, and descriptions. Here, we provide a new solution which combines different algorithms (BLAST, DIAMOND, HMMER3) and databases (UniprotKB, KOfam, NCBIFAMs, TIGRFAMs, and PFAM), and also overcome data download challenges. Arche analysis pipeline can accommodate advanced tools in a unique order, creating several advantages regarding to other commonly used annotators.
 
-## Installing dependencies
+## Installing GeneMarkS-2
 
 Before you download Arche (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
 
@@ -26,27 +26,18 @@ Test the software
 
 &nbsp;    **gms2.pl --seq YOUR_GENOME**  
 
-To install the other dependencies, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
+To install Arche, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
 
-&nbsp;    **conda create -n arche_annotator diamond=2.0.14 bedtools=2.27.0 p7zip=16.02 barrnap=0.9 hmmer=3.3.2 prodigal=2.6.3 blast=2.12.0 fasta3=36.3.8i ucsc-fasomerecords=455 trnascan-se=2.0.9 gdown -c bioconda -c conda-forge**  
+&nbsp;    **conda create -n arche_env -c gundizalv92 -c bioconda -c conda-forge arche**  
 
 This command wil create a conda environment for arche future runs. It includes the installation of specific packages from bioconda and conda-forge channels.
 
-## Installing Arche  
+## Installing databases
 
-The program with the already formatted databases and mapping files can be downloaded (13Gb) via command line using gdown:  
+The already formatted databases and mapping files can be downloaded (13Gb) via command line:  
 
-&nbsp;    **conda activate arche_annotator**  
-&nbsp;    **gdown --fuzzy https://drive.google.com/file/d/1x9caXGPpYXCHUoodOdnuJI0tCDe9qtGG/view?usp=sharing**  
-
-Once the download is finished:  
-
-&nbsp;    **tar -xvf arche_[version].tar (move the output directory to the desired place)**  
-&nbsp;    **cd arche_[version]/bin/**  
-&nbsp;    **chmod +777 arche.sh**  
-&nbsp;    **bash arche.sh --install**  
-
-You should make the bin directory accessible to your PATH (e.g. add export PATH=$PATH:/path/to/arche_[version]/bin to your ~/.bashrc file)
+&nbsp;    **arche --download**
+&nbsp;    **arche --install**  
 
 ## Troubleshooting
 
@@ -54,24 +45,22 @@ In the case the instalation process or the running fails:
 
 1. Check you are working within the conda environment you've created ("conda activate arche_annotator")
 2. Check you have properly installed GeneMarkS-2
-3. If you have already run the command **./arche.sh --install**, open the arche.sh script using a text editor and in the section "Main directory" (first lines) replace the string after DIR= with the full path of the working directory, e.g. /home/YOUR_USER/arche_1.0.1
-4. Delete arche's directory, uncompress from tar file, and install again
 
 ## Running Arche
 
 ### BlastP annotation of a bacterial genome, using 20 threads and 40 GB of memory:
 ```
-arche.sh -n ecoli -t 20 -r 40 e_coli.fna
+arche -n ecoli -t 20 -r 40 e_coli.fna
 ```
 
 ### SSEARCH annotation of an archaeal genome, using 1 thread and 2 GB of memory
 ```
-arche.sh -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
+arche -n halorubrum -a ssearch -k achaea halorubrum_sp_DM2.fa
 ```
 
 ### DIAMOND annotation of a metagenome
 ```
-arche.sh -n seawater_meatgenome -k meta seawater_metagenome.fna
+arche -n seawater_meatgenome -k meta seawater_metagenome.fna
 ```
 ## Annotation of Escherichia coli K12
 
