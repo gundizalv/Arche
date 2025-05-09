@@ -40,7 +40,7 @@ conda activate arche_env
 ```
 
 
-This command wil create a conda environment for arche future runs. It includes the installation of specific packages from bioconda and conda-forge channels.
+This command wil create a conda environment for arche future runs. It includes the installation of Arche from my user channel and other specific packages from bioconda and conda-forge channels.
 
 ## Installing databases
 
