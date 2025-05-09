@@ -59,7 +59,7 @@ arche --install
 
 In the case the instalation process or the running fails:
 
-1. Check you are working within the conda environment you've created ("conda activate arche_annotator")
+1. Check you are working within the conda environment you've created ("conda activate arche_env")
 2. Check you have properly installed GeneMarkS-2
 
 ## Running Arche
