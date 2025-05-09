@@ -8,7 +8,7 @@ The growing amount of genomic data has prompted a need for less demanding and us
 
 ## Installing GeneMarkS-2
 
-Before you download Arche (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
+Before you download Arche and its databases (13Gb), make sure GeneMarkS-2 (GMS2) is working properly on your computer. As GMS2 requires a licence (free), you must download it manually
 
 &nbsp;    **Download GeneMarkS-2 and key from http://exon.gatech.edu/GeneMark/license_download.cgi**  
 &nbsp;    **tar xvfz gms2_linux_[version].tar.gz**  
@@ -29,6 +29,7 @@ Test the software
 To install Arche, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
 
 &nbsp;    **conda create -n arche_env -c gundizalv92 -c bioconda -c conda-forge arche**  
+&nbsp;    **conda activate arche_env**  
 
 This command wil create a conda environment for arche future runs. It includes the installation of specific packages from bioconda and conda-forge channels.
 
