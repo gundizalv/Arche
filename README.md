@@ -25,6 +25,7 @@ cp gm_key ~/.gmhmmp2_key
 ``` 
 or
 ```
+gunzip gm_key.gz
 cp gm_key ~/.gm_key
 ``` 
 
