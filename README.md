@@ -2,7 +2,7 @@
 ![Don't judge me](https://img.shields.io/badge/Language-Bash-blue)
 [![DOI:10.1101/2022.11.28.518280/bioRxiv](https://zenodo.org/badge/DOI/10.1101/2022.11.28.518280/bioRxiv.svg)](https://doi.org/10.1101/2022.11.28.518280)
 
-# Arche: a flexible tool for annotation of microbial contigs
+# Arche: a flexible tool for annotation of prokaryotic contigs
 
 The growing amount of genomic data has prompted a need for less demanding and user friendly functional annotators. At the present, it’s hard to find a pipeline for the annotation of multiple functional data, such as both enzyme commission numbers (E.C.) and orthologous identifiers (KEGG and eggNOG), protein names, gene names, alternative names, and descriptions. Here, we provide a new solution which combines different algorithms (BLAST, DIAMOND, HMMER3) and databases (UniprotKB, KOfam, NCBIFAMs, TIGRFAMs, and PFAM), and also overcome data download challenges. Arche analysis pipeline can accommodate advanced tools in a unique order, creating several advantages regarding to other commonly used annotators.
 
