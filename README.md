@@ -28,8 +28,11 @@ Test the software
 
 To install Arche, you will require the anaconda distribution. Download and install it from https://www.anaconda.com/download/success
 
-&nbsp;    **conda create -n arche_env -c gundizalv92 -c bioconda -c conda-forge arche**  
-&nbsp;    **conda activate arche_env**  
+```
+conda create -n arche_env -c gundizalv92 -c bioconda -c conda-forge arche
+conda activate arche_env
+```
+
 
 This command wil create a conda environment for arche future runs. It includes the installation of specific packages from bioconda and conda-forge channels.
 
